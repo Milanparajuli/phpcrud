@@ -25,7 +25,7 @@
             <td><?php echo $row['name']; ?></td>
             <td><?php echo $row['address']; ?></td>
             <td><?php echo $row['district']; ?></td>
-            <td><?php echo $row['file']; ?></td>
+            <td><img src="../images/<?php echo $row['image']; ?>" alt="" width="50px" height="50px"></td>
             <td><button type="submit"><a href="edit.php? id=<?php echo $row['id'];?>">Edit</a></button> <button type="submit"><a href="delete.php? id=<?php echo $row['id'];?>" onclick="return confirm('Are you sure?')";> Delete </a> </button></td>
             
         </tr>
